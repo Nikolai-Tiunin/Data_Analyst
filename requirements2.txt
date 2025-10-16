@@ -1,0 +1,79 @@
+# === базовые зависимости ===
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+
+# === ядро проекта RVC ===
+numpy==1.23.5
+numba==0.56.4
+llvmlite==0.39.0
+soundfile==0.13.1
+cffi==1.16.0
+pycparser==2.21
+future>=0.18.3
+ffmpeg-python==0.2.0
+decorator>=4.0.10
+pooch>=1.0
+packaging>=20.0
+
+# === fairseq и его зависимости ===
+fairseq==0.12.2
+bitarray
+regex<2025
+sacrebleu<3
+omegaconf==2.0.6
+hydra-core==1.0.7
+
+# === web-интерфейс (gradio stack) ===
+gradio==3.34.0
+aiofiles
+aiohttp
+altair>=4.2.0
+gradio-client>=0.2.6
+huggingface-hub>=0.14.0
+markdown-it-py[linkify]>=2.0.0
+mdit-py-plugins<=0.3.3
+orjson
+pandas
+pydantic<2
+pygments>=2.12.0
+python-multipart
+requests
+semantic-version
+websockets>=10.0
+
+# === onnxruntime, tensorboard, sklearn и вспомогательные ===
+onnxruntime==1.23.0
+coloredlogs
+flatbuffers
+protobuf<4.24,>=3.20
+threadpoolctl
+grpcio>=1.48.2
+tensorboard-data-server>=0.7,<0.8
+einops
+local-attention
+humanfriendly>=9.1
+
+# === визуализация и утилиты ===
+matplotlib==3.10.6
+cycler
+contourpy
+fonttools
+kiwisolver
+pyparsing
+python-dateutil
+scikit-learn==1.7.2
+
+# === fastapi backend (используется внутри webui) ===
+fastapi==0.88.0
+starlette==0.22.0
+click>=7.0
+
+# === другие необходимые компоненты ===
+librosa==0.9.1
+tqdm>=4.42.1
+fsspec
+jinja2
+sympy
+networkx
+MarkupSafe>=2.0
